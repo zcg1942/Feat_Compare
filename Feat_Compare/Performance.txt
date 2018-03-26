@@ -1,0 +1,8 @@
+"Performance"
+"Algorithm"	"Average time per Frame"	"Average time per KeyPoint"
+"BRISK"	170.417	0.297894
+"FREAK"	497.526	1.75532
+"ORB"	175.406	0.356148
+"SIFT"	5916.26	2.18488
+"SURF"	5297.03	1.07458
+

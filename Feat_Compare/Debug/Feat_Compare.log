@@ -1,0 +1,20 @@
+﻿生成启动时间为 2018/3/20 17:09:49。
+     1>项目“E:\Local Repositories\Feature-Compare\Feat_Compare\Feat_Compare\Feat_Compare.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\program\vs\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt FeatureAlgorithm.cpp main.cpp
+         main.cpp
+         FeatureAlgorithm.cpp
+         正在生成代码...
+     1>e:\local repositories\feature-compare\feat_compare\feat_compare\featurealgorithm.cpp(19): warning C4715: “indexParamsForDescriptorType”: 不是所有的控件路径都返回值
+       Link:
+         D:\program\vs\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Local Repositories\Feature-Compare\Feat_Compare\Debug\Feat_Compare.exe" /INCREMENTAL /NOLOGO opencv_ml2413d.lib opencv_calib3d2413d.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_objdetect2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_nonfree2413d.lib opencv_ocl2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_superres2413d.lib opencv_videostab2413d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Local Repositories\Feature-Compare\Feat_Compare\Debug\Feat_Compare.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Local Repositories\Feature-Compare\Feat_Compare\Debug\Feat_Compare.lib" /MACHINE:X86 Debug\AlgorithmEstimation.obj
+         Debug\CollectedStatistics.obj
+         Debug\FeatureAlgorithm.obj
+         Debug\ImageTransformation.obj
+         Debug\main.obj
+         Feat_Compare.vcxproj -> E:\Local Repositories\Feature-Compare\Feat_Compare\Debug\Feat_Compare.exe
+     1>已完成生成项目“E:\Local Repositories\Feature-Compare\Feat_Compare\Feat_Compare\Feat_Compare.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:09.49
