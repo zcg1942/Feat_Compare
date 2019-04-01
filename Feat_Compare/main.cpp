@@ -21,11 +21,11 @@ int main(int argc, const char* argv[])
     // Initialize list of algorithm tuples:
 
     algorithms.push_back(FeatureAlgorithm("ORB",   cv::Feature2D::create("ORB"),   useBF));//第二个参数，算法类型就是featureEngine
-	/*algorithms.push_back(FeatureAlgorithm("SIFT", cv::Feature2D::create("SIFT"), useBF));
+	algorithms.push_back(FeatureAlgorithm("SIFT", cv::Feature2D::create("SIFT"), useBF));
 	algorithms.push_back(FeatureAlgorithm("BRISK", cv::Feature2D::create("BRISK"), useBF));
 	algorithms.push_back(FeatureAlgorithm("SURF", cv::Feature2D::create("SURF"), useBF));
-	algorithms.push_back(FeatureAlgorithm("FREAK", cv::Ptr<cv::FeatureDetector>(new cv::SurfFeatureDetector(2000, 4)), cv::Ptr<cv::DescriptorExtractor>(new cv::FREAK()), useBF));*/
-    //algorithms.push_back(FeatureAlgorithm("AKAZE", cv::Feature2D::create("AKAZE"), useBF));
+	algorithms.push_back(FeatureAlgorithm("FREAK", cv::Ptr<cv::FeatureDetector>(new cv::SurfFeatureDetector(2000, 4)), cv::Ptr<cv::DescriptorExtractor>(new cv::FREAK()), useBF));
+    algorithms.push_back(FeatureAlgorithm("AKAZE", cv::Feature2D::create("AKAZE"), useBF));
     //algorithms.push_back(FeatureAlgorithm("KAZE",  cv::Feature2D::create("KAZE"),  useBF));//KAZE没有添加到Feature2D中
 	
 	

@@ -139,7 +139,7 @@ bool performEstimation
                 visibleFeatures++;//可见特征点数
             }
         }
-
+		float RMSE = 0.;
         for (int i = 0; i < matches.size(); i++)
         {
             cv::Point2f expected = sourcePointsInFrame[matches[i].trainIdx];//trainIdx是DMatch类中的int型，这句得到匹配对在原图像中对应的特征点
@@ -149,7 +149,11 @@ bool performEstimation
             {
                 correctMatches++;//距离小于阈值时认为是正确匹配,但对错误的也没有剔除 剔除的工作在下一步的RANSAC中
             }
+
+			float distance_square = (expected - actual).dot(expected - actual);
+			 RMSE = RMSE + distance_square;
         }
+		RMSE = sqrt(RMSE / matches.size());//为什么算出来是一百多
 
 		bool homographyFound = ImageTransformation::findHomography(sourceKp, resKpReal, matches, inliermatches, homography);//这里本来是注释掉的，直接用会报错
 		//可选用least-median或者RANSAC计算出内点对和估计出的变换矩阵，返回一个bool值
